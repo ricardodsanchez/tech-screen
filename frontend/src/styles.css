@@ -1,0 +1,5 @@
+body { font-family: system-ui, sans-serif; margin: 0; padding: 2rem; }
+.container { max-width: 900px; margin: 0 auto; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.card { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; }
+.error { color: #a00; }
