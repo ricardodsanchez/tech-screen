@@ -24,7 +24,6 @@ public sealed class TransferService
             var existing = await _transfers.GetByIdempotencyKeyAsync(idempotencyKey!, ct);
             if (existing is not null)
             {
-                // Intentional issue: return 201 again instead of 200; no conflict detection.
                 return (existing, null, 201);
             }
         }
