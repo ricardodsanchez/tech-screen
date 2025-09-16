@@ -7,7 +7,7 @@ export default function AccountBalances() {
 
   React.useEffect(() => {
     api.getAccounts().then(setAccounts).catch(() => setError('failed_to_load'))
-  }, [accounts.length]) // Intentional issue: unstable dependency triggers extra fetches
+  }, [accounts.length]) // Intentional issue
 
   return (
     <div className="card">
